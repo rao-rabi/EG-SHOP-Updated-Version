@@ -1,0 +1,56 @@
+/* hero section */
+
+.hero-aboutbg{
+        background: url(/Assets/about-section/inner-banner.jpg);
+        box-shadow: inset 0 0 0 1000px rgba(0, 42, 82, 0.7);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+    }
+
+/* about section */
+
+.about-detail{
+    box-shadow: 4px 8px 30px rgba(141, 141, 141,.15) ;
+    border-radius: 10px;
+}
+
+/* watch section */
+
+.bg-watch{
+    background: url(/Assets/about-section/about\ hero.png);
+        box-shadow: inset 0 0 0 1000px rgba(0, 42, 82, 0.7);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        display: flex;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+}
+
+/* why choose us */
+
+.choose-us-card-main{
+    box-shadow: 4px 8px 30px rgba(141, 141, 141,.15) ;
+    position: relative;
+}
+.choose-us-card{
+    box-shadow: 4px 8px 30px rgba(141, 141, 141,.15) ;
+        transition: 1s;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.choose-us-card:hover{
+    transform: scale(1.06);
+    z-index: 3;
+}

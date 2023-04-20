@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EG Shop -My Account</title>
+    <link rel="stylesheet" href="/CSS Files/style.css">
+    <link rel="stylesheet" href="/CSS Files/about.css">
+    <link rel="stylesheet" href="/CSS Files/my_account.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand ps-lg-5 pe-lg-5 flex-wrap pt-3">
+        <div class="container-fluid">
+            <div>
+                <a href="/index.html"><img class="img-fluid object-fit-contain" src="/Assets/eg-shop.png" alt=""></a>
+            </div>
+
+            <!-- search bar -->
+            <div class="d-xl-block d-none">
+                <div class="d-flex">
+                    <input class="p-2 me-0" style="width: 30vw;" type="search" name="search" id="search"
+                        placeholder="Search Product">
+                    <button class="btn rounded-0 p-2 pe-4 ps-4 ms-0 text-white main-bg" type="submit"
+                        id="search">Search</button>
+                </div>
+            </div>
+            <!-- items -->
+            <div class="d-flex justify-content-center align-items-center">
+                <!-- bag Items -->
+                <div class="pt-3">
+                    <!-- Button trigger modal -->
+                    <p class="fs-5 fw-bold main-color" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="bi bi-basket"></i></p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title h4 main-color2 " id="exampleModalLabel">Bag Items(2)</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="vegetable d-flex justify-content-between align-items-center mt-4">
+                                        <div class="d-flex">
+                                            <img class="img-fluid" width="70vw" src="/Assets/about-section/vegebag.png"
+                                                alt="">
+                                            <div>
+                                                <p class="lead">Vegetable package</p>
+                                                <button type="button"
+                                                    class="btn btn-light  bg-body-secondary  bg-opacity-100 rounded-0 p-2 ">-
+                                                    <span class="ps-3 pe-3"> 1 </span> +</button><span
+                                                    class="fw-bold ps-3 pe-3">x</span><span
+                                                    class="fw-semibold text-black-50">
+                                                    $20/kg</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn-close justify-content-end"
+                                                data-bs-dismiss="vegetable" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="brockli d-flex justify-content-between align-items-center mt-4">
+                                        <div class="d-flex">
+                                            <img class="img-fluid" width="70vw"
+                                                src="/Assets/about-section/fresh-broccoli-vegetable (copy).jpg" alt="">
+                                            <div>
+                                                <p class="lead">Fresh Brokli</p>
+                                                <button type="button"
+                                                    class="btn btn-light  bg-body-secondary  bg-opacity-100 rounded-0 p-2 ">-
+                                                    <span class="ps-3 pe-3"> 1 </span> +</button><span
+                                                    class="fw-bold ps-3 pe-3">x</span><span
+                                                    class="fw-semibold text-black-50">
+                                                    $20/kg</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn-close justify-content-end"
+                                                data-bs-dismiss="brockli" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-5 mb-1">
+                                        <p class="leaf fw-normal">Subtotal</p>
+                                        <p class="h5">$40</p>
+                                    </div>
+                                </div>
+                                <div class="m-auto mb-4">
+                                    <a href="cart.html"><button
+                                            class="btn rounded-3 text-white btn-bg p-2 ps-5 pe-5 w-100 mb-3"
+                                            type="submit" id="coupon">View Cart</button></a>
+                                    <a href="checkout.html"><button
+                                            class="btn rounded-3 text-white btn-bg p-2 ps-5 w-100 pe-5" type="submit"
+                                            id="coupon">Checkout</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dropdown -->
+                <div class="dropstart ms-3 me-3">
+                    <div data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
+                    <ul class="dropdown-menu mt-5 border-top border-0 border-success border-4 rounded-0 p-1">
+                        <li><a class="dropdown-item lead fw-medium" href="my_account.html">My Account</a></li>
+                        <hr>
+                        <li><a class="dropdown-item lead fw-medium" href="about.html">About</a></li>
+                        <hr>
+                        <li><a class="dropdown-item lead fw-medium" href="products.html">Products</a></li>
+                        <hr>
+                        <li><a class="dropdown-item lead fw-medium" href="contact.html">Contact</a></li>
+                        <hr>
+                        <li><a class="dropdown-item lead fw-medium" href="checkout.html">Checkout</a></li>
+                        <hr>
+                        <li><a class="dropdown-item lead fw-medium" href="orderdetails.html">Order Details</a></li>
+                        <li>
+                            <hr class="d-xl-none">
+                            <div class="d-flex d-xl-none d-block">
+                                <input class="p-2 me-0" style="width: 30vw;" type="search" name="search" id="search"
+                                    placeholder="Search Product">
+                                <button class="btn rounded-0 p-2 pe-4 ps-4 ms-0 text-white main-bg" type="submit"
+                                    id="search">Search</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- cart -->
+                <a class="text-black" href="cart.html">
+                    <div class="position-relative">
+                        <i class="bi bi-cart3 text-black p-1 fs-5 rounded-circle"></i>
+                        <span class="position-absolute top-0 translate-middle badge rounded-circle bg-dark p-1">
+                            12
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Number -->
+            <div class="d-md-block d-none">
+                <div class="d-flex">
+                    <img class="img-fluid object-fit-contain" width="30px" src="/Assets/phone-call.png" alt="">
+                    <div class="ms-3">
+                        <p class="mb-0 text-black-50">Hoteline Number</p>
+                        <p class="mt-0">+800 176 111 456</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- about hero section -->
+
+    <div class="container-fluid hero-aboutbg">
+        <div class="text-center">
+            <p class="display-4 fw-bold text-white">My Account</p>
+            <p class="text-white fs-3"><a class="text-decoration-none text-white fs-4" href="/index.html">Home</a> > <a
+                    class="text-decoration-none text-white fs-4" href="#">My Account</a></p>
+        </div>
+    </div>
+
+    <!-- contact form -->
+
+    <div class="container-fluid p-md-5 mt-5">
+        <div class="row d-flex justify-content-center gap-md-5 gy-5">
+            <!-- contact options -->
+            <div class="col-xl-3 col-lg-4 col-12 position-relative">
+                <div class="contact-board p-3">
+                    <a class="text-decoration-none" href="#">
+                        <div class="d-flex btn-bg fs-5 fw-semibold text-white justify-content-center pt-3 mb-4"
+                            style="border: 4px solid rgb(5, 54, 77);">
+                            <i class="bi bi-speedometer2"></i>
+                            <p>DashBoard</p>
+                        </div>
+                    </a>
+                    <a class="text-decoration-none" href="myprofile.html">
+                        <div
+                            class="d-flex contact-option fs-5 fw-semibold text-black-50 justify-content-center pt-3 mb-4">
+                            <i class="bi bi-person"></i>
+                            <p>My Profile</p>
+                        </div>
+                    </a>
+                    <a class="text-decoration-none" href="myorder.html">
+                        <div
+                            class="d-flex contact-option fs-5 fw-semibold text-black-50 justify-content-center pt-3 mb-4">
+                            <i class="bi bi-bag"></i>
+                            <p>My Order</p>
+                        </div>
+                    </a>
+                    <a class="text-decoration-none" href="accountsettings.html">
+                        <div
+                            class="d-flex contact-option fs-5 fw-semibold text-black-50 justify-content-center pt-3 mb-4">
+                            <i class="bi bi-person-fill-gear"></i>
+                            <p>Account Settings</p>
+                        </div>
+                    </a>
+                    <a class="text-decoration-none" href="/index.html">
+                        <div class="d-flex contact-option fs-5 fw-semibold text-black-50 justify-content-center pt-3">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- DashBoard -->
+
+            <div class="col-xl-8 col-lg-7 col-md-12 contact-board text-center pb-5">
+                <h1 class="mt-5 mb-5">Hi Rao Rabi</h1>
+                <div class="row gap-2 ms-5 me-5">
+                    <div class="col border border-1 border-black-50 p-5 ">
+                        <p class="h3">0<br>PENDING</p>
+                    </div>
+                    <div class="col border border-1 border-black-50 p-5">
+                        <p class="h3">50<br>PROCESSING</p>
+                    </div>
+                    <div class="col border border-1 border-black-50 p-5">
+                        <p class="h3">40<br>PICKED</p>
+                    </div>
+                    <div class="col border border-1 border-black-50 p-5">
+                        <p class="h3">10<br>COMPLETED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="container-fluid mt-5 text-white bg-black pt-5 pb-5">
+        <div class="row ms-md-2 gy-5">
+            <!-- about Shop -->
+            <div class="col-lg-3 col-12">
+                <h3>About EG Shop</h3>
+                <hr class="w-25 border border-2 border-white opacity-100">
+                <p class="fs-5 text-white-50 fw-semibold">EG STORE - worldwide Grocery store since 2021. We sale over
+                    2000+
+                    Category
+                    products on our web-site</p>
+                <div class="d-flex">
+                    <img><i class="bi bi-telephone-inbound fs-4"></i></img>
+                    <div class="ms-3">
+                        <p class="mb-0 text-white-50">+9234 5678123</p>
+                        <p class="mt-0 text-white-50">+9234 4565134</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <img><i class="bi bi-envelope fs-4"></i></img>
+                    <div class="ms-3">
+                        <p class="mb-0 text-white-50">info@gmail.com</p>
+                        <p class="mt-0 text-white-50">support@gmail.com</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <img><i class="bi bi-geo-alt fs-4"></i></img>
+                    <div class="ms-3 mt-1">
+                        <p class="text-white-50">3102 Barlet Avenure <br> Southfield, MI 48075</p>
+                    </div>
+                </div>
+            </div>
+            <!-- search Items and links -->
+            <div class="col-lg-6 col-12 text-lg-center">
+                <img class="img-fluid object-fit-contain opacity-75" src="/Assets/webicon.png" alt="">
+                <p class="lead fw-normal mt-3">Register Now To Get Updates On Promotions and
+                    Coupons.<br>Dont't
+                    Worry!
+                    It's Not
+                    Spam</p>
+                <div class="d-flex justify-content-lg-center mt-4">
+                    <input class="p-2 me-0 w-50 bg-transparent text-white" type="email" name="email" id="email"
+                        placeholder="Your Email">
+                    <button class="btn btn-success rounded-0 p-2 pe-4 ps-4 ms-0" type="submit" id="email">Send</button>
+                </div>
+                <div class="d-flex justify-content-lg-center mt-5">
+                    <a href="https://www.facebook.com"><i
+                            class="fa-brands fa-facebook-f rounded-circle p-1 pe-2 ps-2 me-4 object-fit-contain"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com"><i
+                            class="fa-brands fa-instagram rounded-circle p-1 pe-2 ps-2 me-4 object-fit-contain"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.linkedin.com"><i
+                            class="fa-brands fa-linkedin-in rounded-circle p-1 pe-2 ps-2 me-4 object-fit-contain"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.twitter.com"><i
+                            class="fa-brands fa-twitter rounded-circle p-1 pe-2 ps-2 object-fit-contain"
+                            style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <!-- company -->
+            <div class="col-lg-3 col-12">
+                <h3>Company</h3>
+                <hr class="w-25 border border-2 border-white opacity-100">
+                <ul class="list-unstyled fs-5">
+                    <li class="pb-2 foot-item">Privacy Policy</li>
+                    <li class="pb-2 foot-item">Returns</li>
+                    <li class="pb-2 foot-item">Terms & Conditions</li>
+                    <li class="pb-2 foot-item">Our Support</li>
+                    <li class="pb-2 foot-item">Terms & Services</li>
+                    <a class="text-decoration-none text-white foot-item" href="checkout.html">
+                        <li class="pb-2">Checkout</li>
+                    </a>
+                    <li class="pb-2 foot-item">Other Issues</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer-end -->
+
+    <div class="container-fluid bg-black mb-0 pb-5 pt-3">
+        <p class="text-light ms-md-3 mb-4 text-white-50">Copyright 2021 EG-SHOP Grocery | Design by Egens Lab</p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

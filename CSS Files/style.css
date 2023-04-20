@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-color {
+  color: rgb(5, 54, 77) !important;
+}
+.main-bg {
+  background-color: rgb(5, 54, 77) !important;
+}
+
+/* navbar */
+
+.navbar {
+  box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.15) !important;
+}
+.nav-item{
+    cursor: pointer;
+}
+
+.dropdown-item:hover{
+color: green !important;
+translate: 4px;
+transition: .5s;
+}
+
+/* sidebar */
+
+.side-bar {
+  height: 10%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12%;
+  z-index: 2;
+  box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.15);
+}
+.side-bar-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+.bi-list {
+  font-size: 20px !important;
+}
+.bi-x:hover {
+  background-color: #f85d2e !important;
+  color: white !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .content-body {
+    margin-left: 8.3%;
+  }
+  .side-bar {
+    height: 91%;
+    padding-top: 10% !important;
+    bottom: 0;
+    display: block;
+  }
+  .side-bar-items {
+    display: block;
+  }
+  .bi-list {
+    font-size: 30px !important;
+  }
+}
+
+.sidebar-icon:hover {
+  background-color: rgb(22, 129, 22) !important;
+  color: white !important;
+}
+.bi-arrow-left:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* hero-section */
+
+.hero-bgimg {
+  background: url(/Assets/0_1Bd-UxSlW_sgVc0V.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  object-fit: cover;
+}
+
+/* search section */
+
+.main-searchbar {
+  box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.15);
+}
+
+/* products section */
+
+.products-card {
+  border: 5px solid black;
+  cursor: pointer;
+}
+.products-card:hover {
+  background-color: rgb(1, 109, 1);
+  color: white;
+}
+
+.products-card div img:hover {
+  filter: invert();
+}
+
+/* vegetables offers */
+
+.card-1 {
+  margin-bottom: 30%;
+  margin-right: 45%;
+  transition: 0.75s;
+  cursor: pointer;
+}
+.card-1:hover {
+  transform: translateX(40%);
+}
+@media only screen and (max-width: 1290px) and (min-width: 992px) {
+  .card-1 {
+    margin-bottom: 10%;
+    margin-right: 15%;
+    transition: 0.75s;
+    cursor: pointer;
+  }
+  .card-1:hover {
+    transform: translateX(10%);
+  }
+}
+@media only screen and (max-width: 784px) and (min-width: 768px) {
+  .card-1 {
+    margin-bottom: 10%;
+    margin-right: 15%;
+    transition: 0.75s;
+    cursor: pointer;
+  }
+  .card-1:hover {
+    transform: translateX(10%);
+  }
+}
+@media only screen and (max-width: 395px) {
+  .card-1 {
+    margin-bottom: 10%;
+    margin-right: 15%;
+    transition: 0.75s;
+    cursor: pointer;
+  }
+  .card-1:hover {
+    transform: translateX(10%);
+  }
+}
+
+.card-2 {
+  margin: 7%;
+  transition: 0.75s;
+  cursor: pointer;
+}
+.card-2:hover {
+  transform: scale(1.165, 1.25);
+}
+.card-2 button:hover {
+  background-color: white;
+  color: rgb(1, 97, 9);
+}
+
+/* grocery cards */
+
+.grocery-card {
+  box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.15) !important;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grocery-card img {
+  width: 30vh;
+  height: 30vh;
+}
+.grocery-card:hover {
+  transform: scale(1.07);
+  z-index: 2;
+}
+
+/* fresh news */
+
+.news-card {
+  box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.15);
+}
+
+/* facilities */
+
+.facilities-card {
+  box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.15);
+  transition: 1s;
+}
+.facilities-card:hover {
+  transform: scale(1.06);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1200px) {
+  .facilities-card {
+    height: 25vh !important;
+  }
+}
+
+/* special offer */
+
+.specialoffer-bgimg {
+  background: url(/Assets/offer.png);
+  box-shadow: inset 0 0 0 1000px rgba(0, 20, 41, 0.85);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.fa-brands {
+  border: 2px dotted white !important;
+}
+.fa-brands:hover{
+    background-color: white !important;
+    cursor: pointer;
+    color: green !important;
+}
+
+.foot-item:hover{
+    color: green !important;
+    cursor: pointer;
+}
