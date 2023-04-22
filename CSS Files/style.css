@@ -56,7 +56,6 @@ transition: .5s;
   }
   .side-bar {
     height: 91%;
-    padding-top: 10% !important;
     bottom: 0;
     display: block;
   }
