@@ -183,7 +183,7 @@ transition: .5s;
   height: 30vh;
 }
 .grocery-card:hover {
-  transform: scale(1.07);
+  transform: scale(1.06);
   z-index: 2;
 }
 
